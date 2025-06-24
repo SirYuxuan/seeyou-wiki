@@ -37,6 +37,11 @@ module.exports = {
             "udc/backend/common-services",
           ],
         },
+        {
+          type: "category",
+          label: "前端",
+          items: ["udc/frontend/dev-env"],
+        },
       ],
     },
   ],

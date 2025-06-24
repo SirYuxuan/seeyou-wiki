@@ -42,10 +42,10 @@ const { themes: prismThemes } = require("prism-react-renderer");
       /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
       ({
         navbar: {
-          title: "致远互联V8操作手册",
+          title: "V8操作手册",
           logo: {
             alt: "致远互联V8 Logo",
-            src: "img/logo.svg",
+            src: "img/docusaurus.png",
           },
           items: [
             {
@@ -55,7 +55,7 @@ const { themes: prismThemes } = require("prism-react-renderer");
               label: "开发指南",
             },
             {
-              href: "https://github.com/facebook/docusaurus",
+              href: "https://github.com/siryuxuan/seeyou-wiki",
               label: "GitHub",
               position: "right",
             },
