@@ -1,0 +1,92 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #25c2a0;
+  --ifm-color-primary-dark: rgb(33, 175, 144);
+  --ifm-color-primary-darker: rgb(31, 165, 136);
+  --ifm-color-primary-darkest: rgb(26, 136, 112);
+  --ifm-color-primary-light: rgb(70, 203, 174);
+  --ifm-color-primary-lighter: rgb(102, 212, 189);
+  --ifm-color-primary-lightest: rgb(146, 224, 208);
+  --ifm-code-font-size: 95%;
+}
+
+.docusaurus-highlight-code-line {
+  background-color: rgba(0, 0, 0, 0.1);
+  display: block;
+  margin: 0 calc(-1 * var(--ifm-pre-padding));
+  padding: 0 var(--ifm-pre-padding);
+}
+
+html[data-theme='dark'] .docusaurus-highlight-code-line {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* Tabs 组件美化 */
+.tabs {
+  margin: 1.5rem 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background: var(--ifm-pre-background);
+}
+
+.tabs__item {
+  padding: 0.5rem 1.5rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+  border: none !important;
+  transition: all 0.3s ease;
+  position: relative;
+  margin: 0;
+}
+
+.tabs__item--active {
+  background: transparent !important;
+  color: var(--ifm-color-primary) !important;
+}
+
+.tabs__item--active:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--ifm-color-primary);
+  border-radius: 3px 3px 0 0;
+}
+
+.tabs__item:hover {
+  background: rgba(0, 0, 0, 0.05) !important;
+}
+
+[data-theme='dark'] .tabs__item:hover {
+  background: rgba(255, 255, 255, 0.05) !important;
+}
+
+/* 代码块美化 */
+.tabs-container {
+  background: var(--ifm-pre-background);
+}
+
+.tabs-container .tabs {
+  margin: 0;
+  border-radius: 8px 8px 0 0;
+  background: transparent;
+}
+
+.tabs-container [role="tabpanel"] {
+  border-radius: 0 0 8px 8px;
+  padding: 0.75rem;
+  background: transparent;
+}
+
+.tabs-container pre {
+  margin: 0;
+  border-radius: 4px;
+}
