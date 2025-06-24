@@ -24,16 +24,20 @@ module.exports = {
         },
       ],
     },
-  ],
-
-  // But you can create a sidebar manually
-  /*
-  tutorialSidebar: [
     {
-      type: 'category',
-      label: 'Tutorial',
-      items: ['hello'],
+      type: "category",
+      label: "UDC平台",
+      items: [
+        {
+          type: "category",
+          label: "后端",
+          items: [
+            "udc/backend/annotations",
+            "udc/backend/gen-call",
+            "udc/backend/common-services",
+          ],
+        },
+      ],
     },
   ],
-   */
 };
