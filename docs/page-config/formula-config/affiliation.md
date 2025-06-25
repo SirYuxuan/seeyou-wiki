@@ -8,6 +8,48 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
 <Tabs>
+  <TabItem value="person-only" label="单独选人" default>
+
+```json
+{
+  "type": "__EXPRESS_TOKENS",
+  "data": [
+    {
+      "desc": "张三",
+      "value": "-6510150242326985413",
+      "type": "CONSTANT",
+      "controlData": {
+        "controlType": "REFERENCE",
+        "controlProperties": "{\"appName\":\"organization\",\"fullName\":\"com.seeyon.organization.domain.core.entity.OrgMember\",\"multi\":true}"
+      },
+      "uid": "8ff482f6-13f8-4691-81b9-3d8e7ab97679"
+    }
+  ]
+}
+```
+
+  </TabItem>
+    <TabItem value="dept-only" label="单独选部门" default>
+
+```json
+{
+  "type": "__EXPRESS_TOKENS",
+  "data": [
+    {
+      "uid": "6d41d5a0-d7f0-41eb-95b2-93255f976412",
+      "type": "CONSTANT",
+      "value": "-3135774222341027440",
+      "desc": "办公室",
+      "controlData": {
+        "controlType": "REFERENCE",
+        "controlProperties": "{\"appName\":\"organization\",\"fullName\":\"com.seeyon.organization.domain.core.entity.OrgUnit\",\"multi\":true}"
+      }
+    }
+  ]
+}
+```
+
+  </TabItem>
   <TabItem value="person-affiliated" label="人员隶属" default>
 
 ```json
