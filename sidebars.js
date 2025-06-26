@@ -44,5 +44,16 @@ module.exports = {
         },
       ],
     },
+    {
+      type: "category",
+      label: "应用配置",
+      items: [
+        {
+          type: "category",
+          label: "用印管理",
+          items: ["app/seal/use", "app/seal/update"],
+        },
+      ],
+    },
   ],
 };
