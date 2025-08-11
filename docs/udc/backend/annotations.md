@@ -20,14 +20,13 @@ sidebar_position: 1
 ```java
 // 监听 BPM 事件
 @MessageListener(topic = "BPM")
-public void onBpmEvent(BpmEvent event) {
-    if (event instanceof BpmSubmitEvent) {
-        // ... 处理流程提交事件
-    } else if (event instanceof BpmStopEvent) {
-        // ... 处理流程终止事件
-    }
-}
+public void onBpmEvent(BpmSubmitEvent event) {
 
+}
+@MessageListener(topic = "BPM")
+public void onBpmEvent(BpmStopEvent event) {
+
+}
 // 监听协同事项事件
 @MessageListener(topic = "AFFAIR")
 public void onAffairEvent(AffairEvent event) {

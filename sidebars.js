@@ -20,7 +20,7 @@ module.exports = {
         {
           type: "category",
           label: "公式配置",
-          items: ["page-config/formula-config/affiliation"],
+          items: ["page-config/formula-config/affiliation","page-config/formula-config/find"],
         },
       ],
     },
